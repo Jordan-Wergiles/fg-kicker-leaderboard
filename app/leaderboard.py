@@ -37,7 +37,7 @@ def create_leaderboard(fg, players, min_attempts=10):
 def main():
     parser = argparse.ArgumentParser(description="Generate field goal kicker leaderboard.")
     parser.add_argument('--fg_file', type=str, default='field_goal_attempts.csv')
-    parser.add_argument('--players_file', type=str, default='players.csv')
+    parser.add_argument('--players_file', type=str, default='kickers.csv')
     parser.add_argument('--output', type=str, default='leaderboard.csv')
     parser.add_argument('--min_attempts', type=int, default=10)
     args = parser.parse_args()
