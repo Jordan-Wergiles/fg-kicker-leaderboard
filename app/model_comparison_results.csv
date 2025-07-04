@@ -1,0 +1,32 @@
+Model,Log Loss,ROC AUC
+Simulation-Driven (Calibrated),0.334,0.7784
+Simulation-Driven,0.3369,0.7786
+"Deep Learning (PyTorch NN, Calibrated)",0.3384,0.8078
+Bayesian Logistic Regression (Calibrated),0.3481,0.8044
+RNN Model (Calibrated),0.3569,0.7359
+Bayesian Logistic Regression (PyMC MAP),0.3613,0.7922
+Logistic Regression (Calibrated),0.3622,0.739
+Logistic Regression,0.363,0.739
+Deep Learning (PyTorch NN),0.3661,0.7751
+XGBoost (Calibrated),0.3685,0.7131
+Gradient Boosting (Calibrated),0.3694,0.7166
+Random Forest (Calibrated),0.376,0.6952
+Naive Bayes (Calibrated),0.3761,0.6941
+KNN (Calibrated),0.377,0.6893
+Gradient Boosting,0.3841,0.7162
+GRU Model (Calibrated),0.3865,0.5804
+Attention Model (Calibrated),0.39,0.5785
+XGBoost,0.3931,0.7074
+LSTM Model (Calibrated),0.394,0.5773
+State-Space Model (NumPyro),0.3947,0.6295
+Autoregressive Hierarchical GLM (Calibrated),0.4026,0.5419
+Mixed-Effects GLM (Calibrated),0.4104,0.5875
+RNN Model,0.4615,0.7313
+LSTM Model,0.5677,0.5623
+GRU Model,0.6575,0.5658
+Autoregressive Hierarchical GLM,0.6642,0.536
+Mixed-Effects GLM,0.6673,0.563
+Attention Model,0.6696,0.5754
+Random Forest,0.9883,0.6897
+KNN,1.6887,0.6719
+Naive Bayes,8.4023,0.6822
