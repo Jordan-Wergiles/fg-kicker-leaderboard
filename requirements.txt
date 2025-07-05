@@ -1,11 +1,10 @@
 pandas
 numpy
 scikit-learn
-Flask
+flask
 flask-cors
 torch
 joblib
-sklearn
 xgboost
 scipy
 matplotlib
@@ -15,7 +14,5 @@ bambi
 arviz
 pymc
 statsmodels
-pathlib
 seaborn
-warnings
 joblib
