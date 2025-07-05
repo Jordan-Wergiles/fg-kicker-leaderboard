@@ -1,32 +1,33 @@
 Model,Log Loss,ROC AUC
-Simulation-Driven (Calibrated),0.334,0.7784
-Simulation-Driven,0.3369,0.7786
-"Deep Learning (PyTorch NN, Calibrated)",0.3384,0.8078
-Bayesian Logistic Regression (Calibrated),0.3481,0.8044
-RNN Model (Calibrated),0.3569,0.7359
-Bayesian Logistic Regression (PyMC MAP),0.3613,0.7922
-Logistic Regression (Calibrated),0.3622,0.739
-Logistic Regression,0.363,0.739
-Deep Learning (PyTorch NN),0.3661,0.7751
-XGBoost (Calibrated),0.3685,0.7131
-Gradient Boosting (Calibrated),0.3694,0.7166
-Random Forest (Calibrated),0.376,0.6952
-Naive Bayes (Calibrated),0.3761,0.6941
-KNN (Calibrated),0.377,0.6893
-Gradient Boosting,0.3841,0.7162
-GRU Model (Calibrated),0.3865,0.5804
-Attention Model (Calibrated),0.39,0.5785
-XGBoost,0.3931,0.7074
-LSTM Model (Calibrated),0.394,0.5773
-State-Space Model (NumPyro),0.3947,0.6295
-Autoregressive Hierarchical GLM (Calibrated),0.4026,0.5419
-Mixed-Effects GLM (Calibrated),0.4104,0.5875
-RNN Model,0.4615,0.7313
-LSTM Model,0.5677,0.5623
-GRU Model,0.6575,0.5658
-Autoregressive Hierarchical GLM,0.6642,0.536
-Mixed-Effects GLM,0.6673,0.563
-Attention Model,0.6696,0.5754
-Random Forest,0.9883,0.6897
-KNN,1.6887,0.6719
-Naive Bayes,8.4023,0.6822
+"Deep Learning (PyTorch NN, Calibrated)",0.3302,0.7825
+Bayesian Logistic Regression (Calibrated),0.3303,0.7818
+Simulation-Driven (Calibrated),0.3372,0.7746
+Simulation-Driven,0.339,0.7749
+Deep Learning (PyTorch NN),0.3396,0.7728
+Bayesian Logistic Regression (PyMC MAP),0.3412,0.7733
+Logistic Regression (Calibrated),0.364,0.7348
+RNN Model (Calibrated),0.3644,0.7146
+Logistic Regression,0.3648,0.735
+XGBoost (Calibrated),0.3756,0.7018
+Naive Bayes (Calibrated),0.3777,0.6979
+Random Forest (Calibrated),0.3778,0.6915
+Mixed-Effects GLM (Calibrated),0.3785,0.6529
+KNN (Calibrated),0.3833,0.6599
+State-Space Model (NumPyro Calibrated),0.3855,0.6516
+LSTM Model (Calibrated),0.3878,0.6414
+Gradient Boosting,0.3907,0.7063
+State-Space Model (NumPyro),0.3921,0.6464
+Gradient Boosting (Calibrated),0.3929,0.7115
+RNN Model,0.3949,0.7102
+XGBoost,0.3984,0.7038
+Autoregressive Hierarchical GLM (Calibrated),0.4,0.567
+Attention Model (Calibrated),0.4033,0.5736
+GRU Model (Calibrated),0.4053,0.5223
+Attention Model,0.589,0.5661
+LSTM Model,0.6089,0.6246
+GRU Model,0.6425,0.5005
+Mixed-Effects GLM,0.6448,0.6401
+Autoregressive Hierarchical GLM,0.6564,0.5599
+Random Forest,1.2433,0.6712
+KNN,1.9828,0.6415
+Naive Bayes,8.7674,0.6846
