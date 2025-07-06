@@ -8,7 +8,7 @@ import os
 
 # Set base directory and model directory
 base_dir = os.path.dirname(os.path.abspath(__file__))
-model_dir = os.path.join(base_dir, "..", "models")
+model_dir = os.path.join(base_dir, "models")
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -65,4 +65,4 @@ def predict():
 
 # Run the Flask app
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
