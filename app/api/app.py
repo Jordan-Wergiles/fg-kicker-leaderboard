@@ -4,16 +4,22 @@ import torch
 import torch.nn as nn
 import joblib
 import numpy as np
+import os
+
+# Set base directory and model directory
+base_dir = os.path.dirname(os.path.abspath(__file__))
+model_dir = os.path.join(base_dir, "..", "models")
 
 # Initialize Flask app
 app = Flask(__name__)
 CORS(app)
 
 # Load preprocessing artifacts
-scaler = joblib.load("../../models/nn_scaler.pkl")
-input_columns = joblib.load("../../models/nn_input_columns.pkl")
-calibrator = joblib.load("../../models/nn_iso_calibrator.pkl")
+scaler = joblib.load(os.path.join(model_dir, "nn_scaler.pkl"))
+input_columns = joblib.load(os.path.join(model_dir, "nn_input_columns.pkl"))
+calibrator = joblib.load(os.path.join(model_dir, "nn_iso_calibrator.pkl"))
 
+# Define the model architecture
 class FGOEModel(nn.Module):
     def __init__(self, input_dim):
         super().__init__()
@@ -32,9 +38,10 @@ class FGOEModel(nn.Module):
 
 # Initialize and load the model
 model = FGOEModel(input_dim=len(input_columns))
-model.load_state_dict(torch.load("../../models/model_nn.pt"))
+model.load_state_dict(torch.load(os.path.join(model_dir, "model_nn.pt")))
 model.eval()
 
+# Define the prediction endpoint
 @app.route("/predict", methods=["POST"])
 def predict():
     data = request.get_json()
@@ -56,5 +63,6 @@ def predict():
         "inputs": data
     })
 
+# Run the Flask app
 if __name__ == "__main__":
     app.run(debug=True)
