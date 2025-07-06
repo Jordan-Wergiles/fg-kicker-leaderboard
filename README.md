@@ -62,7 +62,8 @@ Use the web app to access the raw fgoe data for each kick to dive deeper into a 
 
 Additional functionality has been built in to aggregate the data and create simple visualizations.
 
-Skills Demonstrated
+## Skills Demonstrated
+
 Docker & containerized ML workflows
 
 Flask model deployment
