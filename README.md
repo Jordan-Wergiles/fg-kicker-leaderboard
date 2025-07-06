@@ -76,7 +76,7 @@ Jupyter notebook-based machine learning research and model deployment
 
 Modular project structure
 
-Local Development (Optional)
+## Local Development (Optional)
 If you prefer to run outside of Docker:
 
 # Backend (from fg-kicker-leaderboard/app/api)
